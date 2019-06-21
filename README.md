@@ -34,7 +34,7 @@ ___________________
 ## NEXT
 
 - Automatically updates `phpcs`'s `installed_paths` with correct configuration
-- No longer installs JS or CSS/SASS standards, please see [](upgrade guide) on installing CSS, SASS, and JavaScript coding standards with npm
+- No longer installs JS or CSS/SASS standards, please see [](upgrade guide) on installing CSS, SASS, and JavaScript coding standards with `npm`
 
 ## 2.0.1
 
