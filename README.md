@@ -13,16 +13,16 @@ WebDevStudios in-house linting and coding standards for your favorite editor.
 
 ## How to Install
 
-Simply grab a cup of ☕&nbsp; and follow directions [here](https://github.com/WebDevStudios/WDS-Coding-Standards/wiki/Installation).
-
-## Want to Contribute?
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md).
+<<<< @TODO NEW INSTALL >>>>
 
 ___________________
 
 
 # Changelog
+
+## NEXT
+
+- Automatically updates `phpcs`'s `installed_paths` with correct configuration
 
 ## 2.0.1
 
