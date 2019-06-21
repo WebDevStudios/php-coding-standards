@@ -1,7 +1,7 @@
 {
     "name": "webdevstudios/php-coding-standards",
     "description": "In-house PHP linting and coding standards for WebDevStudios",
-    "type": "library",
+    "type" : "phpcodesniffer-standard",
     "minimum-stability": "stable",
     "authors": [],
     "require": {
