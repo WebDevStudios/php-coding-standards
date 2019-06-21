@@ -21,14 +21,20 @@ WebDevStudios in-house linting and coding standards for your favorite editor.
 
 `composer global install webdevstudios/php-coding-standards`
 
-___________________
+__________________
 
+# TODO
+
+- [ ] Create upgrade guide and note in changelog
+
+___________________
 
 # Changelog
 
 ## NEXT
 
 - Automatically updates `phpcs`'s `installed_paths` with correct configuration
+- No longer installs JS or CSS/SASS standards, please see [](upgrade guide) on installing CSS, SASS, and JavaScript coding standards with npm
 
 ## 2.0.1
 
