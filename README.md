@@ -11,7 +11,7 @@ WebDevStudios in-house linting and coding standards for your favorite editor.
 - __Greg Rickaby (Director of Engineering)__
     + High level Approval / Leadership
 
-## How to Install
+## How to install
 
 ### In your project
 
