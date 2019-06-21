@@ -1,6 +1,6 @@
 {
-    "name": "webdevstudios/wds-coding-standards",
-    "description": "In-house linting and coding standards for WebDevStudios",
+    "name": "webdevstudios/php-coding-standards",
+    "description": "In-house PHP linting and coding standards for WebDevStudios",
     "type": "library",
     "minimum-stability": "stable",
     "authors": [],
