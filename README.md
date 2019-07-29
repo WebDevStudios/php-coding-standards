@@ -15,11 +15,11 @@ WebDevStudios in-house linting and coding standards for your favorite editor.
 
 ### In your project
 
-`composer install webdevstudios/php-coding-standards`
+`composer require webdevstudios/php-coding-standards`
 
 ### Globally
 
-`composer global install webdevstudios/php-coding-standards`
+`composer global require webdevstudios/php-coding-standards`
 
 __________________
 
