@@ -1,6 +1,6 @@
-# WebDevStudios Coding Standards
+# WebDevStudios PHP Coding Standards
 
-WebDevStudios in-house linting and coding standards for your favorite editor.
+WebDevStudios in-house linting and PHP coding standards for your favorite editor.
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. WordPress for big brands."></a>
 
@@ -54,7 +54,7 @@ This release updates to the new WPCS `^2.x`.
 - `@author` is suggested in docblocks in both PHP & JS (see release notes)
 - Documented `@return` on abstract methods will no longer show a warning about missing `@return`
 
-### previous/Release Notes
+### Release Notes
 
 This installation requires you to do an additional step to get `eslint` to work:
 
