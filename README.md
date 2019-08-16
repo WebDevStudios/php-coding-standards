@@ -28,7 +28,7 @@ ___________________
 
 # Changelog
 
-## 0.1.0
+## 1.0.0-alpha1
 
 - Automatically updates `phpcs`'s `installed_paths` with correct configuration
 - No longer installs JS or CSS/SASS standards, please see [](upgrade guide) on installing CSS, SASS, and JavaScript coding standards with `npm`
