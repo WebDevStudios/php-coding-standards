@@ -15,7 +15,7 @@ WebDevStudios in-house linting and coding standards for your favorite editor.
 
 ```
 composer config repositories.webdevstudios/php-coding-standards git git@github.com:WebDevStudios/php-coding-standards.git
-composer require webdevstudios/php-coding-standards
+composer require webdevstudios/php-coding-standards:dev-master@dev
 ```
 
 __________________
