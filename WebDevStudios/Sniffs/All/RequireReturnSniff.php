@@ -113,6 +113,8 @@ class RequireReturnSniff extends BaseSniff {
 	 *     @type string $doc_block_end Where the docblock ends.
 	 * }
 	 *
+	 * @author  Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
 	 * @since 1.1.0 (wds-coding-standards)
 	 * @return string Contextual information about the function (if it is a function).
 	 */

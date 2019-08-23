@@ -62,6 +62,8 @@ class RequireAuthorSniff extends BaseSniff {
 	 * @param  \PHP_CodeSniffer\Files\File $file  The file object.
 	 * @param  int                         $start Where the docblock starts.
 	 *
+	 * @author  Aubrey Portwood <aubrey@webdevstudios.com>
+	 *
 	 * @since                              1.2.0 (wds-coding-standards)
 	 */
 	public function process( File $file, $start ) {
