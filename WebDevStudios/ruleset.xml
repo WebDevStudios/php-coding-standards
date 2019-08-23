@@ -47,7 +47,7 @@
 
 	We commonly use condensed functions in themes, so let's keep them around.
 
-	@since 1.2.0
+	@since 1.2.0 (wds-coding-standards)
 	@author Aubrey Portwood <aubrey@webdevstudios.com>
 	-->
 	<rule ref="PEAR.Functions.FunctionCallSignature">
@@ -61,7 +61,7 @@
 	<!--
 	Supports the concatenated function calls above.
 
-	@since 1.2.0
+	@since 1.2.0 (wds-coding-standards)
 	@author Aubrey Portwood <aubrey@webdevstudios.com>
 	-->
 	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket" />

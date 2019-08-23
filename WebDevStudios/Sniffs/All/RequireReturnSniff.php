@@ -5,7 +5,7 @@
  * This requires the return tag when you have an return statement
  * inside of the function.
  *
- * @since   1.1.0
+ * @since   1.1.0 (wds-coding-standards)
  * @package WebDevStudios\Sniffs
  */
 
@@ -18,7 +18,7 @@ use \PHP_CodeSniffer\Files\File;
  * Require the return tag.
  *
  * @author Aubrey Portwood
- * @since  1.1.0
+ * @since  1.1.0 (wds-coding-standards)
  */
 class RequireReturnSniff extends BaseSniff {
 
@@ -26,7 +26,7 @@ class RequireReturnSniff extends BaseSniff {
 	 * What are we parsing?
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @var array
 	 */
@@ -39,7 +39,7 @@ class RequireReturnSniff extends BaseSniff {
 	 * Register on all docblock comments.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @return array List of tokens.
 	 */
@@ -50,7 +50,7 @@ class RequireReturnSniff extends BaseSniff {
 			 * PHP/JS Docblock.
 			 *
 			 * @link http://php.net/manual/en/language.basic-syntax.comments.php
-			 * @since 1.1.0
+			 * @since 1.1.0 (wds-coding-standards)
 			 */
 			T_DOC_COMMENT_OPEN_TAG,
 		];
@@ -60,7 +60,7 @@ class RequireReturnSniff extends BaseSniff {
 	 * Process file.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @param  \PHP_CodeSniffer\Files\File $file            The file object.
 	 * @param  int                         $doc_block_start Where the docblock starts.
@@ -113,7 +113,7 @@ class RequireReturnSniff extends BaseSniff {
 	 *     @type string $doc_block_end Where the docblock ends.
 	 * }
 	 *
-	 * @since 1.1.0
+	 * @since 1.1.0 (wds-coding-standards)
 	 * @return string Contextual information about the function (if it is a function).
 	 */
 	protected function examine_function( File &$file, $args ) {
@@ -201,7 +201,7 @@ class RequireReturnSniff extends BaseSniff {
 	 * @param object                      $args Current working arguments.
 	 *
 	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
-	 * @since  2018-11-21
+	 * @since  2018-11-21 (wds-coding-standards)
 	 * @return int
 	 */
 	private function has_abstract_token( &$file, $args ) {

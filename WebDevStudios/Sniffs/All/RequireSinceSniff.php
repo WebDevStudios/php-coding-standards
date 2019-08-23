@@ -4,7 +4,7 @@
  *
  * The since tag is required on all docblock elements.
  *
- * @since   1.1.0
+ * @since   1.1.0 (wds-coding-standards)
  * @package WebDevStudios\Sniffs
  */
 
@@ -17,7 +17,7 @@ use \PHP_CodeSniffer\Files\File;
  * Require the return tag.
  *
  * @author Aubrey Portwood
- * @since  1.1.0
+ * @since  1.1.0 (wds-coding-standards)
  */
 class RequireSinceSniff extends BaseSniff {
 
@@ -25,7 +25,7 @@ class RequireSinceSniff extends BaseSniff {
 	 * What are we parsing?
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @var array
 	 */
@@ -38,7 +38,7 @@ class RequireSinceSniff extends BaseSniff {
 	 * Register on all docblock comments.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @return array List of tokens.
 	 */
@@ -50,7 +50,7 @@ class RequireSinceSniff extends BaseSniff {
 			 *
 			 * @link http://php.net/manual/en/language.basic-syntax.comments.php
 			 *
-			 * @since 1.1.0
+			 * @since 1.1.0 (wds-coding-standards)
 			 */
 			T_DOC_COMMENT_OPEN_TAG,
 		];
@@ -64,9 +64,9 @@ class RequireSinceSniff extends BaseSniff {
 	 * @param  \PHP_CodeSniffer\Files\File $file            The file object.
 	 * @param  int                         $doc_block_start Where the docblock starts.
 	 *
-	 * @since 1.1.0
+	 * @since 1.1.0 (wds-coding-standards)
 	 *
-	 * @since 1.1.1 Don't warn about @since about anything in themes.
+	 * @since 1.1.1 Don't warn about @since about anything in themes. (wds-coding-standards)
 	 * @see         https://docs.google.com/document/d/16-wN2i9Fe2fpq24PMMQqu80vBvCVNvm2kpgwtcfsJXE/edit Documentation of this requirement.
 	 *
 	 * @return void Early bail if a WordPress theme.
@@ -76,13 +76,13 @@ class RequireSinceSniff extends BaseSniff {
 		$token         = $this->tokens[ $doc_block_start ];
 		$doc_block_end = $token['comment_closer'];
 
-		// The @since in the comment block, false by default.
+		// The @since in the comment block, false by default. (wds-coding-standards)
 		$have_an_at_since_tag = false;
 
 		for ( $i = $doc_block_start; $i <= $doc_block_end; $i++ ) {
 			if ( stristr( $this->tokens[ $i ]['content'], '@since' ) ) {
 
-				// We found an @since in the block.
+				// We found an @since in the block. (wds-coding-standards)
 				$have_an_at_since_tag = $this->tokens[ $i ];
 			}
 		}
@@ -90,7 +90,7 @@ class RequireSinceSniff extends BaseSniff {
 		/**
 		 * Don't warn on theme files at all.
 		 *
-		 * @since 1.1.1
+		 * @since 1.1.1 (wds-coding-standards)
 		 * @see   https://docs.google.com/document/d/16-wN2i9Fe2fpq24PMMQqu80vBvCVNvm2kpgwtcfsJXE/edit Documentation of this requirement.
 		 */
 		if ( stristr( $file->getFilename(), 'wp-content/themes/' ) ) {

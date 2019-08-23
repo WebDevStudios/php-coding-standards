@@ -2,7 +2,7 @@
 /**
  * Shared functionality for all sub-classes.
  *
- * @since   1.1.0
+ * @since   1.1.0 (wds-coding-standards)
  * @package WebDevStudios\Sniffs
  */
 
@@ -14,7 +14,7 @@ use \PHP_CodeSniffer\Files\File;
 /**
  * Base class for extending so you can get the below common tools.
  *
- * @since  1.1.0
+ * @since  1.1.0 (wds-coding-standards)
  */
 abstract class BaseSniff implements Sniff {
 
@@ -22,7 +22,7 @@ abstract class BaseSniff implements Sniff {
 	 * The tokens.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @var array
 	 */
@@ -32,7 +32,7 @@ abstract class BaseSniff implements Sniff {
 	 * Push an error to the console.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @param  \PHP_CodeSniffer\Files\File $file     The file.
 	 * @param  int                         $where    Where the error happened.
@@ -52,7 +52,7 @@ abstract class BaseSniff implements Sniff {
 	 * Push a warning to the console.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @param  \PHP_CodeSniffer\Files\File $file     The file.
 	 * @param  int                         $where    Where the warning happened.
@@ -72,7 +72,7 @@ abstract class BaseSniff implements Sniff {
 	 * Record something to the console.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @param array                       $args {
 	 *     Arguments.
@@ -110,7 +110,7 @@ abstract class BaseSniff implements Sniff {
 	 * Get token.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.1.0
+	 * @since  1.1.0 (wds-coding-standards)
 	 *
 	 * @param int    $position The position of the token.
 	 * @param string $key      The key you want from the array data, leave empty to get all data.
@@ -129,7 +129,7 @@ abstract class BaseSniff implements Sniff {
 	 * Get the position the token's content ends.
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
-	 * @since  1.2.0
+	 * @since  1.2.0 (wds-coding-standards)
 	 *
 	 * @param  array $token  Token.
 	 * @return int           The position.
@@ -142,7 +142,7 @@ abstract class BaseSniff implements Sniff {
 	 * Get a token's content.
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
-	 * @since  1.2.0
+	 * @since  1.2.0 (wds-coding-standards)
 	 *
 	 * @param  array $token  Token.
 	 * @return string        The content.
@@ -163,7 +163,7 @@ abstract class BaseSniff implements Sniff {
 	 *
 	 * @return boolean|mixed False if the token type did not validate, the value of findNext else.
 	 *
-	 * @since  Unknown
+	 * @since  Unknown (wds-coding-standards)
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
 	 *
 	 * @see  https://pear.php.net/package/PHP_CodeSniffer/docs/3.2.3/apidoc/PHP_CodeSniffer/File.html#methodfindNext
@@ -188,7 +188,7 @@ abstract class BaseSniff implements Sniff {
 	 * Find out if the given token type is on the next line.
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
-	 * @since  1.2.0
+	 * @since  1.2.0 (wds-coding-standards)
 	 *
 	 * @param  \PHP_CodeSniffer\Files\File $file File.
 	 * @param  int                         $token_type The Token Type Code.
@@ -214,7 +214,7 @@ abstract class BaseSniff implements Sniff {
 	 * Get the contents of a line.
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
-	 * @since  1.2.0
+	 * @since  1.2.0 (wds-coding-standards)
 	 *
 	 * @param  object $file File object from PHPCS.
 	 * @param  int    $line The line.
@@ -237,7 +237,7 @@ abstract class BaseSniff implements Sniff {
 	 * Does the next line have content.
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
-	 * @since  1.2.0
+	 * @since  1.2.0 (wds-coding-standards)
 	 *
 	 * @param  object $file     The file object from PHPCS.
 	 * @param  string $text     The string to search for on that line.

@@ -4,7 +4,7 @@
  *
  * The since tag is required on all docblock elements.
  *
- * @since   1.2.0
+ * @since   1.2.0 (wds-coding-standards)
  * @package WebDevStudios\Sniffs
  */
 
@@ -17,7 +17,7 @@ use \PHP_CodeSniffer\Files\File;
  * Require the return tag.
  *
  * @author Aubrey Portwood
- * @since  1.2.0
+ * @since  1.2.0 (wds-coding-standards)
  */
 class RequireAuthorSniff extends BaseSniff {
 
@@ -25,7 +25,7 @@ class RequireAuthorSniff extends BaseSniff {
 	 * What are we parsing?
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.2.0
+	 * @since  1.2.0 (wds-coding-standards)
 	 *
 	 * @var array
 	 */
@@ -38,7 +38,7 @@ class RequireAuthorSniff extends BaseSniff {
 	 * Register on all docblock comments.
 	 *
 	 * @author Aubrey Portwood
-	 * @since  1.2.0
+	 * @since  1.2.0 (wds-coding-standards)
 	 *
 	 * @return array List of tokens.
 	 */
@@ -50,7 +50,7 @@ class RequireAuthorSniff extends BaseSniff {
 			 *
 			 * @link http://php.net/manual/en/language.basic-syntax.comments.php
 			 *
-			 * @since 1.2.0
+			 * @since 1.2.0 (wds-coding-standards)
 			 */
 			T_DOC_COMMENT_OPEN_TAG,
 		];
@@ -62,7 +62,7 @@ class RequireAuthorSniff extends BaseSniff {
 	 * @param  \PHP_CodeSniffer\Files\File $file  The file object.
 	 * @param  int                         $start Where the docblock starts.
 	 *
-	 * @since                              1.2.0
+	 * @since                              1.2.0 (wds-coding-standards)
 	 */
 	public function process( File $file, $start ) {
 
