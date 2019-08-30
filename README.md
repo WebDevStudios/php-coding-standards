@@ -18,7 +18,7 @@ composer config repositories.webdevstudios/php-coding-standards git git@github.c
 composer require webdevstudios/php-coding-standards:1.0.0-alpha1
 ```
 
-Then add a `.phpcs.xml.dist` file to your project with the following:
+Then add a `.phpcs.xml` file to your project with the following:
 
 ```xml
 <?xml version="1.0"?>
