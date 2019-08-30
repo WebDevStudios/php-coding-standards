@@ -13,14 +13,8 @@ PHP coding standards for WebDevStudios projects.
 
 To install in your project, use the following commands:
 
-_Note, the below commands will change once package is published._
-
 ```bash
-composer config repositories.webdevstudios/php-coding-standards git git@github.com:WebDevStudios/php-coding-standards.git
-```
-
-```bash
-composer require webdevstudios/php-coding-standards:1.0.0-alpha1
+composer require webdevstudios/php-coding-standards:1.0.0-beta1
 ```
 
 Then add a `.phpcs.xml` file to your project with the following:
@@ -32,7 +26,7 @@ Then add a `.phpcs.xml` file to your project with the following:
 </ruleset>
 ```
 
-If you have issues, please make sure your editor is properly configured to detect `.phpcs.xml` and that it's using the `phpcs` in the `vendor/bin` directory.
+If you have issues, please make sure your editor is properly configured to detect `.phpcs.xml` and that it's using the `phpcs` in the `vendor/bin` directory. Also, this is not always compatible with legacy [WDS-Coding-Standards](https://github.com/WebDevStudios/WDS-Coding-Standards).
 
 ### CLI Usage
 
