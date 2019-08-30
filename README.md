@@ -13,6 +13,8 @@ PHP coding standards for WebDevStudios projects.
 
 To install in your project, use the following commands:
 
+_Make sure your project is configured to use our internal Satis._
+
 ```bash
 composer require webdevstudios/php-coding-standards:1.0.0-beta1
 ```
