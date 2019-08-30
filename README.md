@@ -1,20 +1,25 @@
+<a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. WordPress for big brands."></a>
+
 # WebDevStudios PHP Coding Standards
 
-WebDevStudios in-house linting and PHP coding standards for your favorite editor.
-
-<a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. WordPress for big brands."></a>
+PHP coding standards for WebDevStudios projects.
 
 ## Leadership
 
-- __Aubrey Portwood (Senior BED Developer)__
-    + Writes & Integrates Coding Standards/Maintains Standards
-- __Greg Rickaby (Director of Engineering)__
-    + High level Approval / Leadership
+- [Aubrey Portwood](https://github.com/aubreypwd) - Project Lead
+- [Greg Rickaby](https://github.com/gregrickaby) - Director of Engineering
 
-## How to install
+## How to Install
 
-```
+To install in your project, use the following commands:
+
+_Note, the below commands will change once package is published._
+
+```bash
 composer config repositories.webdevstudios/php-coding-standards git git@github.com:WebDevStudios/php-coding-standards.git
+```
+
+```bash
 composer require webdevstudios/php-coding-standards:1.0.0-alpha1
 ```
 
@@ -26,81 +31,32 @@ Then add a `.phpcs.xml` file to your project with the following:
     <rule ref="WebDevStudios"/>
 </ruleset>
 ```
-__________________
 
-# TODO
+If you have issues, please make sure your editor is properly configured to detect `.phpcs.xml` and that it's using the `phpcs` in the `vendor/bin` directory.
 
-- [ ] Create upgrade guide and note in changelog
+### CLI Usage
+
+You may also use this from the command line, e.g.:
+
+```bash
+./vendor/bin/phpcs path/to/file.php
+```
+
+`composer` will automatically install WebDevStudios standard for `vendor/bin/phpcs`.
 
 ___________________
 
 # Changelog
 
+## 1.0.0-beta1
+
+No changes.
+
+This feels useable at a project level, having tested it in various projects myself and is ready for testing.
+
 ## 1.0.0-alpha1
 
+- Initial fork of _just_ the PHP coding standards from [WDS-Coding-Standards](https://github.com/WebDevStudios/WDS-Coding-Standards)
 - Automatically updates `phpcs`'s `installed_paths` with correct configuration
 - No longer installs JS or CSS/SASS standards, please see [](upgrade guide) on installing CSS, SASS, and JavaScript coding standards with `npm`
 - Installable at a project level
-
-__________
-
-# Fork Changelog: wds-coding-standards
-
-## 2.0.1
-
-- Fixes issue where `getFilename` error happening in latest `eslint` <sup>[PR](https://github.com/WebDevStudios/WDS-Coding-Standards/pull/74)</sup>
-
-## 2.0.0
-
-PHPCS Upgrade Guide: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Version-3.0-Upgrade-Guide
-
-This release updates to the new WPCS `^2.x`. 
-
-- Reworked all our custom sniffs to use new `PHP_CodeSniffer` structure <sup>[a210b73](https://github.com/WebDevStudios/WDS-Coding-Standards/commit/a210b73cd46ce76d4cfbd8eea578d4b4c3d7eab3)</sup>
-
-## 1.2.0
-
-- WordPress Coding Standards update to `1.2.1`
-- PHPCS 3.3.2 installed via composer
-- Docblocks are required on function assignments in JS (see release notes)
-- `@author` is suggested in docblocks in both PHP & JS (see release notes)
-- Documented `@return` on abstract methods will no longer show a warning about missing `@return`
-
-### Release Notes
-
-This installation requires you to do an additional step to get `eslint` to work:
-
-```bash
-npm install -g "/path/to/WebDevStudios/eslint-plugin-webdevstudios"
-```
-
-This will install the additional ES Lint rules we've added via `eslint-plugin-webdevstudios/*` which are now going to be required to have custom ES Lint rules.
-
-## 1.1.1
-
-- WDSCS now requires WPCS 0.14.1 #34; props @jrfoell
-- `@since` is now a warning #39
-- `@since` will not show a warning for files in `wp-content/themes/**` #39
-
-## 1.1.0
-
-- `@return` and `@since` rules are in place [#27](https://github.com/WebDevStudios/WDS-Coding-Standards/pull/27)
-- Find VIM PHPCS configuration [here](https://github.com/WebDevStudios/WDS-Coding-Standards/wiki/Installation:-PHPCS-(PHP-Linting)#editor-configuration-vim) [#28](https://github.com/WebDevStudios/WDS-Coding-Standards/pull/28)
-- Brings over eslint rules from wd_s and improves them to be more like old jshint rules from WordPress.org coding standards [#10](https://github.com/WebDevStudios/WDS-Coding-Standards/issues/10) [#22](https://github.com/WebDevStudios/WDS-Coding-Standards/pull/22)
-- How to vote is clearer in [CONTRIBUTING.md](CONTRIBUTING.md) [#32](https://github.com/WebDevStudios/WDS-Coding-Standards/pull/32)
-- Sass linting added [#26](https://github.com/WebDevStudios/WDS-Coding-Standards/pull/26)
-
-This release brings most of WDS up to par with our currently-established coding standards, of which have been missing from our linting thus-far. Props for this release go to [@aubreypwd](http://github.com/aubreypwd), [@gregrickaby](https://github.com/gregrickaby), [@JayWood](https://github.com/JayWood), [@jrfoell](https://github.com/jrfoell), and [@phatsk](https://github.com/phatsk) for all their helpful work!
-
-## 1.0.1
-
-- Changed `WebDevStudios-phpcs` to just `WebDevStudios` for compatibility with namespaces and new sniffs added later [#12](https://github.com/WebDevStudios/WDS-Coding-Standards/pull/12)
-- Inclusion of the `WordPress-Docs` ruleset
-
-Note, this release breaks some things. When you update to this version,
-you will need to update your coding standard to `WebDevStudios` vs the old
-`WebDevStudios-phpcs` which should no longer work.
-
-## 1.0.0
-
-- Initial ruleset based on WordPress-Extra
