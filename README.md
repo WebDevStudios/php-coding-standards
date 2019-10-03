@@ -7,6 +7,7 @@
 To install in your project, use:
 
 ```bash
+composer config minimum-stability beta
 composer require webdevstudios/php-coding-standards:1.0.0-beta2
 ```
 
