@@ -11,15 +11,13 @@ PHP coding standards for WebDevStudios projects.
 
 ## How to Install
 
-To install in your project, use the following commands:
-
-_Make sure your project is configured to use our internal Satis._
+To install in your project, use:
 
 ```bash
-composer require webdevstudios/php-coding-standards:1.0.0-beta1
+composer require webdevstudios/php-coding-standards:1.0.0-beta2
 ```
 
-Then add a `.phpcs.xml` file to your project with the following:
+Then add a `.phpcs.xml.dist` file to your project with:
 
 ```xml
 <?xml version="1.0"?>
@@ -27,8 +25,6 @@ Then add a `.phpcs.xml` file to your project with the following:
     <rule ref="WebDevStudios"/>
 </ruleset>
 ```
-
-If you have issues, please make sure your editor is properly configured to detect `.phpcs.xml` and that it's using the `phpcs` in the `vendor/bin` directory. Also, this is not always compatible with legacy [WDS-Coding-Standards](https://github.com/WebDevStudios/WDS-Coding-Standards).
 
 ### CLI Usage
 
@@ -38,17 +34,19 @@ You may also use this from the command line, e.g.:
 ./vendor/bin/phpcs path/to/file.php
 ```
 
-`composer` will automatically install WebDevStudios standard for `vendor/bin/phpcs`.
+`composer` will automatically install `WebDevStudios` standard for `vendor/bin/phpcs`.
 
 ___________________
 
 # Changelog
 
+## 1.0.0-beta2
+
+- Setup to publish package on packagist.org
+
 ## 1.0.0-beta1
 
-No changes.
-
-This feels useable at a project level, having tested it in various projects myself and is ready for testing.
+- No changes, this feels useable at a project level, having tested it in various projects myself and is ready for testing
 
 ## 1.0.0-alpha1
 
