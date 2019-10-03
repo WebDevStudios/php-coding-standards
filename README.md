@@ -25,13 +25,23 @@ Then add a `.phpcs.xml.dist` file to your project with:
 
 `composer` will automatically install `WebDevStudios` standard for `vendor/bin/phpcs`.
 
-### CLI Usage
+## CLI Usage
 
-You may also use this from the command line, e.g.:
+### Lint a single file
 
 ```bash
 ./vendor/bin/phpcs --standard=WebDevStudios path/to/file.php
 ```
+
+### Lint multiple files
+
+```bash
+./vendor/bin/phpcs --standard=WebDevStudios --extensions=php /path/to/dir
+```
+
+## Editor Linting
+
+In your favorite editor install it's `phpcs` package and it will automatically detect your `phpcs.xml.dist` file and lint any PHP file you have open.
 
 ___________________
 
