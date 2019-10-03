@@ -50,6 +50,8 @@ ___________________
 ## 1.0.0-beta2
 
 - Setup to publish package on packagist.org
+- Updates to version constraints to allow bug fix updates
+- Updates to README
 
 _Note, not compatible with globally installed [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards)._
 
