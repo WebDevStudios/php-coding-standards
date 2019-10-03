@@ -23,7 +23,7 @@ Then add a `.phpcs.xml.dist` file to your project with:
 </ruleset>
 ```
 
-`composer` will automatically install `WebDevStudios` standard for `vendor/bin/phpcs`.
+Installation will automatically install `WebDevStudios` standard for `vendor/bin/phpcs`.
 
 ## CLI Linting
 
