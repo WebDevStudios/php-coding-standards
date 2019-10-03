@@ -43,6 +43,8 @@ Then add a `.phpcs.xml.dist` file to your project with:
 
 In your favorite editor install it's `phpcs` package and it will automatically detect your `phpcs.xml.dist` file and lint any PHP file you have open.
 
+_If you have [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards) installed, you may have to re-configure your editor._
+
 ___________________
 
 # Changelog
