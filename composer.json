@@ -2,6 +2,12 @@
     "name": "webdevstudios/php-coding-standards",
     "description": "In-house PHP linting and coding standards for WebDevStudios",
     "type" : "phpcodesniffer-standard",
+    "homepage": "https://github.com/WebDevStudios/php-coding-standards",
+    "license": "GPL-2.0+",
+    "support": {
+      "issues": "https://github.com/WebDevStudios/php-coding-standards/issues",
+      "source": "https://github.com/WebDevStudios/php-coding-standards"
+    },
     "minimum-stability": "stable",
     "authors": [],
     "require": {
@@ -11,5 +17,13 @@
     },
     "extra": {
         "phpcodesniffer-search-depth": 5
-    }
+    },
+    "authors": [
+        {
+            "name": "Aubrey Portwood",
+            "email": "aubrey@webdevstudios.com",
+            "homepage": "http://webdevstudios.com/",
+            "role": "Developer"
+        }
+    ]
 }

@@ -2,24 +2,19 @@
 
 # WebDevStudios PHP Coding Standards
 
-PHP coding standards for WebDevStudios projects.
-
-## Leadership
-
-- [Aubrey Portwood](https://github.com/aubreypwd) - Project Lead
-- [Greg Rickaby](https://github.com/gregrickaby) - Director of Engineering
-
 ## How to Install
 
-To install in your project, use the following commands:
-
-_Make sure your project is configured to use our internal Satis._
+To install in your project, use:
 
 ```bash
-composer require webdevstudios/php-coding-standards:1.0.0-beta1
+composer config minimum-stability beta
 ```
 
-Then add a `.phpcs.xml` file to your project with the following:
+```bash
+composer require webdevstudios/php-coding-standards:1.0.0-beta2
+```
+
+Then add a `.phpcs.xml.dist` file to your project with:
 
 ```xml
 <?xml version="1.0"?>
@@ -28,27 +23,43 @@ Then add a `.phpcs.xml` file to your project with the following:
 </ruleset>
 ```
 
-If you have issues, please make sure your editor is properly configured to detect `.phpcs.xml` and that it's using the `phpcs` in the `vendor/bin` directory. Also, this is not always compatible with legacy [WDS-Coding-Standards](https://github.com/WebDevStudios/WDS-Coding-Standards).
+Installation will automatically install `WebDevStudios` standard for `vendor/bin/phpcs`.
 
-### CLI Usage
+## CLI Linting
 
-You may also use this from the command line, e.g.:
+### Lint a single file
 
 ```bash
-./vendor/bin/phpcs path/to/file.php
+./vendor/bin/phpcs --standard=WebDevStudios path/to/file.php
 ```
 
-`composer` will automatically install WebDevStudios standard for `vendor/bin/phpcs`.
+### Lint multiple files
+
+```bash
+./vendor/bin/phpcs --standard=WebDevStudios --extensions=php /path/to/dir
+```
+
+## Editor Linting
+
+In your favorite editor install it's `phpcs` package and it will automatically detect your `phpcs.xml.dist` file and lint any PHP file you have open.
+
+_If you have [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards) installed, you may have to re-configure your editor._
 
 ___________________
 
 # Changelog
 
+## 1.0.0-beta2
+
+- Setup to publish package on packagist.org
+- Updates to version constraints to allow bug fix updates
+- Updates to README
+
+_Note, not compatible with globally installed [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards)._
+
 ## 1.0.0-beta1
 
-No changes.
-
-This feels useable at a project level, having tested it in various projects myself and is ready for testing.
+- No changes, this feels useable at a project level, having tested it in various projects myself and is ready for testing
 
 ## 1.0.0-alpha1
 
