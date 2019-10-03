@@ -41,6 +41,8 @@ ___________________
 
 - Setup to publish package on packagist.org
 
+_Note, not compatible with globally installed [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards)._
+
 ## 1.0.0-beta1
 
 - No changes, this feels useable at a project level, having tested it in various projects myself and is ready for testing
