@@ -11,7 +11,7 @@ composer config minimum-stability beta
 ```
 
 ```bash
-composer require webdevstudios/php-coding-standards:1.0.0-beta2
+composer require webdevstudios/php-coding-standards:1.0.0-beta2 --dev
 ```
 
 Then add a `.phpcs.xml.dist` file to your project with:
