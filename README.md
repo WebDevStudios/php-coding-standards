@@ -2,13 +2,6 @@
 
 # WebDevStudios PHP Coding Standards
 
-PHP coding standards for WebDevStudios projects.
-
-## Leadership
-
-- [Aubrey Portwood](https://github.com/aubreypwd) - Project Lead
-- [Greg Rickaby](https://github.com/gregrickaby) - Director of Engineering
-
 ## How to Install
 
 To install in your project, use:
