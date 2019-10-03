@@ -17,5 +17,13 @@
     },
     "extra": {
         "phpcodesniffer-search-depth": 5
-    }
+    },
+    "authors": [
+        {
+            "name": "Aubrey Portwood",
+            "email": "aubrey@webdevstudios.com",
+            "homepage": "http://webdevstudios.com/",
+            "role": "Developer"
+        }
+    ]
 }
