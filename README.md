@@ -52,6 +52,7 @@ ___________________
 ## 1.0.0
 
 - Update installation method
+- Updated on packagist.org
 
 ## 1.0.0-beta2
 
