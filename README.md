@@ -10,13 +10,19 @@ To install in your project, use:
 composer require webdevstudios/php-coding-standards
 ```
 
-Then add a `.phpcs.xml.dist` file to your project with:
+Then add a `.phpcs.xml.dist` file to your project:
 
 ```xml
 <?xml version="1.0"?>
 <ruleset name="Project">
     <rule ref="WebDevStudios"/>
 </ruleset>
+```
+
+To do this quickly, run:
+
+```bash
+echo '<?xml version="1.0"?><ruleset name="Project"><rule ref="WebDevStudios"/></ruleset>' > .phpcs.xml.dist
 ```
 
 Installation will automatically install `WebDevStudios` standard for `vendor/bin/phpcs`.
