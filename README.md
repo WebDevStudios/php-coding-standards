@@ -43,9 +43,7 @@ Installation will automatically install `WebDevStudios` standard for `vendor/bin
 
 ## Editor Linting
 
-In your favorite editor install it's `phpcs` package and it will automatically detect your `phpcs.xml.dist` file and lint any PHP file you have open.
-
-_If you have [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards) installed, you may have to re-configure your editor._
+In your favorite editor install it's `phpcs` package and it will automatically detect your `phpcs.xml.dist` file and lint any PHP file you have open. _You may need to re-configure your settings if you are moving from WDS-Coding-Standards._
 
 ___________________
 
