@@ -7,11 +7,7 @@
 To install in your project, use:
 
 ```bash
-composer config minimum-stability beta
-```
-
-```bash
-composer require webdevstudios/php-coding-standards:1.0.0-beta2 --dev
+composer require webdevstudios/php-coding-standards
 ```
 
 Then add a `.phpcs.xml.dist` file to your project with:
@@ -48,6 +44,10 @@ _If you have [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-
 ___________________
 
 # Changelog
+
+## 1.0.0
+
+- Updates installation method
 
 ## 1.0.0-beta2
 
