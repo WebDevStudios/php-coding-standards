@@ -7,20 +7,22 @@
 To install in your project, use:
 
 ```bash
-composer config minimum-stability beta
+composer require webdevstudios/php-coding-standards
 ```
 
-```bash
-composer require webdevstudios/php-coding-standards:1.0.0-beta2 --dev
-```
-
-Then add a `.phpcs.xml.dist` file to your project with:
+Then add a `.phpcs.xml.dist` file to your project:
 
 ```xml
 <?xml version="1.0"?>
 <ruleset name="Project">
     <rule ref="WebDevStudios"/>
 </ruleset>
+```
+
+To do this quickly, run:
+
+```bash
+echo '<?xml version="1.0"?><ruleset name="Project"><rule ref="WebDevStudios"/></ruleset>' > .phpcs.xml.dist
 ```
 
 Installation will automatically install `WebDevStudios` standard for `vendor/bin/phpcs`.
@@ -41,13 +43,16 @@ Installation will automatically install `WebDevStudios` standard for `vendor/bin
 
 ## Editor Linting
 
-In your favorite editor install it's `phpcs` package and it will automatically detect your `phpcs.xml.dist` file and lint any PHP file you have open.
-
-_If you have [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards) installed, you may have to re-configure your editor._
+In your favorite editor install it's `phpcs` package and it will automatically detect your `phpcs.xml.dist` file and lint any PHP file you have open. _You may need to re-configure your settings if you are moving from WDS-Coding-Standards._
 
 ___________________
 
 # Changelog
+
+## 1.0.0
+
+- Update installation method
+- Updated on packagist.org
 
 ## 1.0.0-beta2
 
