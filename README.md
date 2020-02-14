@@ -51,7 +51,7 @@ ___________________
 
 ## 1.0.0
 
-- Updates installation method
+- Update installation method
 
 ## 1.0.0-beta2
 
