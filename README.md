@@ -49,6 +49,10 @@ ___________________
 
 # Changelog
 
+## Unreleased
+
+- Update `wp-coding-standards/wpcs` to `2.1.1` <sup>[Release Notes](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/2.1.1)</sup>
+
 ## 1.0.0
 
 - Update installation method
