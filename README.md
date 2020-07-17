@@ -49,7 +49,7 @@ ___________________
 
 # Changelog
 
-## Unreleased
+## 1.1.0
 
 - Update `wp-coding-standards/wpcs` to `2.1.1` <sup>[Release Notes](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/2.1.1)</sup>
 
