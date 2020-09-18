@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="WebDevStudios">
+
 	<!-- See https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
 
 	<!-- Set a description for this ruleset. -->
@@ -30,20 +31,19 @@
 
 	This allows the following type of function call:
 
-	    thing( 'par1', [
-		    'par2array1',
-		    'par2array2',
-	    ] );
-
+			thing( 'par1', [
+				'par2array1',
+				'par2array2',
+			] );
 
 	...which WPCS usually makes you do:
 
-	    $array = [
-		    'par2array1',
-		    'par2array2',
-	    ];
+			$array = [
+				'par2array1',
+				'par2array2',
+			];
 
-	    thing( 'par1', $array );
+			thing( 'par1', $array );
 
 	We commonly use condensed functions in themes, so let's keep them around.
 
@@ -51,11 +51,11 @@
 	@author Aubrey Portwood <aubrey@webdevstudios.com>
 	-->
 	<rule ref="PEAR.Functions.FunctionCallSignature">
-	  <properties>
-	    <property name="requiredSpacesAfterOpen" value="1"/>
-	    <property name="requiredSpacesBeforeClose" value="1"/>
-	  </properties>
-	  <severity>0</severity>
+		<properties>
+			<property name="requiredSpacesAfterOpen" value="1"/>
+			<property name="requiredSpacesBeforeClose" value="1"/>
+		</properties>
+		<severity>0</severity>
 	</rule>
 
 	<!--
@@ -66,4 +66,16 @@
 	-->
 	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket" />
 	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket" />
+
+	<!--
+	Warn when using array() longform style.
+
+	@since Friday, 9/18/2020
+	@author Aubrey Portwood <code@aubreypwd.com>
+	-->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found">
+		<type>warning</type>
+		<message>Long-form array() syntax is discouraged, please consider using short array [] syntax instead.</message>
+	</rule>
+
 </ruleset>
