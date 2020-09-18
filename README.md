@@ -49,6 +49,10 @@ ___________________
 
 # Changelog
 
+## Unreleased
+
+- Update `wp-coding-standards/wpcs` to `>=2.3.0<3.0.0` to get `php-coding-standards` up to date with WP <sup>[PR](https://github.com/WebDevStudios/php-coding-standards/pull/38)</sup>
+
 ## 1.1.0
 
 - Update `wp-coding-standards/wpcs` to `2.1.1` <sup>[Release Notes](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/2.1.1)</sup>
