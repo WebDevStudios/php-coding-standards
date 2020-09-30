@@ -26,7 +26,8 @@
     "require": {
         "wp-coding-standards/wpcs": "2.1.1",
         "squizlabs/php_codesniffer": ">=3.3.1 <3.4.0",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "webdevstudios/php-cs-fixer-config": "dev-master@dev"
     },
     "extra": {
         "phpcodesniffer-search-depth": 5
@@ -38,5 +39,11 @@
             "homepage": "http://webdevstudios.com/",
             "role": "Developer"
         }
-    ]
+    ],
+    "repositories": {
+        "webdevstudios-php-cs-fixer": {
+            "type": "git",
+            "url": "git@github.com:WebDevStudios/php-cs-fixer-config.git"
+        }
+    }
 }

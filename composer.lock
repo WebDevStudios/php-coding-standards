@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4436cfe208a9cd2b1d4effe522559d8",
+    "content-hash": "f124dfb1a6f6d35f87a83fb8a8d0fbce",
     "packages": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -124,6 +124,27 @@
             "time": "2018-09-23T23:08:17+00:00"
         },
         {
+            "name": "webdevstudios/php-cs-fixer-config",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:WebDevStudios/php-cs-fixer-config.git",
+                "reference": "be5c2efd0f3eb76404098aa3a0b9cd022eefc6f6"
+            },
+            "type": "library",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "WebDevStudios",
+                    "email": "contact@webdevstudios.com"
+                }
+            ],
+            "description": "Configuration for php-cs-fixer for WebDevStudios PHP Coding Standards",
+            "time": "2020-09-30T13:36:01+00:00"
+        },
+        {
             "name": "wp-coding-standards/wpcs",
             "version": "2.1.1",
             "source": {
@@ -172,7 +193,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "webdevstudios/php-cs-fixer-config": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
