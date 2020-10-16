@@ -49,34 +49,4 @@ ___________________
 
 # Changelog
 
-## Unreleased
-
-- Update `wp-coding-standards/wpcs` to `>=2.3.0<3.0.0` to get `php-coding-standards` up to date with WP <sup>[PR](https://github.com/WebDevStudios/php-coding-standards/pull/38)</sup>
-
-## 1.1.0
-
-- Update `wp-coding-standards/wpcs` to `2.1.1` <sup>[Release Notes](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/2.1.1)</sup>
-
-## 1.0.0
-
-- Update installation method
-- Updated on packagist.org
-
-## 1.0.0-beta2
-
-- Setup to publish package on packagist.org
-- Updates to version constraints to allow bug fix updates
-- Updates to README
-
-_Note, not compatible with globally installed [WDS Coding Standards](https://github.com/WebDevStudios/WDS-Coding-Standards)._
-
-## 1.0.0-beta1
-
-- No changes, this feels useable at a project level, having tested it in various projects myself and is ready for testing
-
-## 1.0.0-alpha1
-
-- Initial fork of _just_ the PHP coding standards from [WDS-Coding-Standards](https://github.com/WebDevStudios/WDS-Coding-Standards)
-- Automatically updates `phpcs`'s `installed_paths` with correct configuration
-- No longer installs JS or CSS/SASS standards, please see [](upgrade guide) on installing CSS, SASS, and JavaScript coding standards with `npm`
-- Installable at a project level
+[See Releases on Github](https://github.com/WebDevStudios/php-coding-standards/releases)
