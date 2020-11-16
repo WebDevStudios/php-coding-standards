@@ -50,7 +50,7 @@
 	-->
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found">
 		<type>warning</type>
-		<message>Short array syntax should be used to define arrays; in the future, longform syntax will not be used</message>
+		<message>Short array syntax should be used to define arrays; in the future, longform syntax will not be used.</message>
 	</rule>
 
 	<!-- Include WordPress-Docs -->
