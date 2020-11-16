@@ -2,7 +2,7 @@
 
 # WebDevStudios PHP Coding Standards
 
-## How to Install
+## Install
 
 To install in your project, use:
 
