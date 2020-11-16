@@ -14,14 +14,18 @@
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeKeyFound" />
 
 		<!--
-		Allow Shorthand Syntax
+		Allow shorthand array syntax.
 
-		WordPress decided to go for array() over [], we like [], and we discourage
-		array() [see below).]
+		E.g. `[]`.
+
+		WordPress decided to go for `array()` over `[]`. WebDevStudios encourages the use of
+		shorthand syntax for readability and simplicity, and discourages use of shorthand
+		syntax for it's lack of readability due to it's use of parethensis and function-like
+		appearance.
 
 		@since 1.2.2
 		@see https://github.com/WordPress/WordPress-Coding-Standards/blob/2.2.0/WordPress-Core/ruleset.xml#L109
-		@see Generic.Arrays.DisallowLongArraySyntax.Found (Where we discourage array() syntax)
+		@see Generic.Arrays.DisallowLongArraySyntax.Found (Where we discourage `array()` syntax.)
 		-->
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
 	</rule>
@@ -33,6 +37,7 @@
 
 	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40
 	@since 1.2.2
+	@see   WordPress-Extra/Generic.Arrays.DisallowShortArraySyntax (Where we encourage the use of shorthand syntax intead.)
 
 	May error in the future.
 	-->
