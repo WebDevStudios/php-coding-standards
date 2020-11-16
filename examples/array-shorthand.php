@@ -5,8 +5,8 @@
  * @since   Unknown
  * @package None
  *
- * @purpose To ensure the shorthand version of arrays is still useable.
+ * @purpose To ensure the shorthand version of array syntax is encouraged over longform.
  */
 
 $shorthand = []; // Should not warn or error, as it's encouraged.
-$longform  = array(); // Should also not warn or error, but will discourage in the future.
+$longform  = array(); // Should warn, will become error in the future.
