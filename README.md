@@ -7,7 +7,7 @@
 To install in your project, use:
 
 ```bash
-composer require webdevstudios/php-coding-standards --dev
+composer require webdevstudios/php-coding-standards:~1.3.0 --dev
 ```
 
 Then add a `.phpcs.xml.dist` file to your project:
