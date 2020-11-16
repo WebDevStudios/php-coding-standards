@@ -25,7 +25,7 @@
 		appearance.
 
 		@author Aubrey Portwood <aubrey@webdevstudios.com>
-		@since 1.2.2
+		@since  1.3.0
 
 		@see https://github.com/WebDevStudios/php-coding-standards/issues/40                                    Issue this resolves.
 		@see https://github.com/WordPress/WordPress-Coding-Standards/blob/2.2.0/WordPress-Core/ruleset.xml#L109 Where WordPress applies preference for `array()` syntax.
@@ -43,7 +43,7 @@
 	May error in the future.
 
 	@author Aubrey Portwood <aubrey@webdevstudios.com>
-	@since 1.2.2
+	@since  1.3.0
 
 	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40 Issue this resolves.
 	@see   WordPress-Extra/Generic.Arrays.DisallowShortArraySyntax W       here we encourage the use of shorthand syntax intead.
