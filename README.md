@@ -32,13 +32,13 @@ Installation will automatically install `WebDevStudios` standard for `vendor/bin
 ### Lint a single file
 
 ```bash
-./vendor/bin/phpcs --standard=WebDevStudios path/to/file.php
+./vendor/bin/phpcs -s path/to/file.php
 ```
 
 ### Lint multiple files
 
 ```bash
-./vendor/bin/phpcs --standard=WebDevStudios --extensions=php /path/to/dir
+./vendor/bin/phpcs -s --extensions=php /path/to/dir
 ```
 
 ## Editor Linting
