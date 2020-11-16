@@ -44,7 +44,7 @@
 	@author Aubrey Portwood <aubrey@webdevstudios.com>
 	@since  1.3.0
 
-	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40 Issue this resolves.
+	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40 Issue that supports this.
 	@see   WordPress-Extra/Generic.Arrays.DisallowShortArraySyntax         Where we encourage the use of shorthand syntax intead.
 
 	-->
