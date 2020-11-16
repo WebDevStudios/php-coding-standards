@@ -45,7 +45,7 @@
 	@since  1.3.0
 
 	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40 Issue this resolves.
-	@see   WordPress-Extra/Generic.Arrays.DisallowShortArraySyntax W       here we encourage the use of shorthand syntax intead.
+	@see   WordPress-Extra/Generic.Arrays.DisallowShortArraySyntax         Where we encourage the use of shorthand syntax intead.
 
 	-->
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found">
