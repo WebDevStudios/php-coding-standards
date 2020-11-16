@@ -38,7 +38,6 @@
 
 	Warn on longform array syntax.
 
-
 	E.g. array().
 	May error in the future.
 
