@@ -14,6 +14,7 @@
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeKeyFound" />
 
 		<!--
+
 		Allow shorthand array syntax.
 
 		E.g. `[]`.
@@ -23,23 +24,30 @@
 		syntax for it's lack of readability due to it's use of parethensis and function-like
 		appearance.
 
+		@author Aubrey Portwood <aubrey@webdevstudios.com>
 		@since 1.2.2
-		@see https://github.com/WordPress/WordPress-Coding-Standards/blob/2.2.0/WordPress-Core/ruleset.xml#L109
-		@see Generic.Arrays.DisallowLongArraySyntax.Found (Where we discourage `array()` syntax.)
+
+		@see https://github.com/WebDevStudios/php-coding-standards/issues/40                                    Issue this resolves.
+		@see https://github.com/WordPress/WordPress-Coding-Standards/blob/2.2.0/WordPress-Core/ruleset.xml#L109 Where WordPress applies preference for `array()` syntax.
+		@see Generic.Arrays.DisallowLongArraySyntax.Found                                                       Where we discourage `array()` syntax.
 		-->
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
 	</rule>
 
 	<!--
+
 	Warn on longform array syntax.
 
+
 	E.g. array().
-
-	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40
-	@since 1.2.2
-	@see   WordPress-Extra/Generic.Arrays.DisallowShortArraySyntax (Where we encourage the use of shorthand syntax intead.)
-
 	May error in the future.
+
+	@author Aubrey Portwood <aubrey@webdevstudios.com>
+	@since 1.2.2
+
+	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40 Issue this resolves.
+	@see   WordPress-Extra/Generic.Arrays.DisallowShortArraySyntax W       here we encourage the use of shorthand syntax intead.
+
 	-->
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found">
 		<type>warning</type>
@@ -58,6 +66,7 @@
 	</rule>
 
 	<!--
+
 	Support concatenated function calls.
 
 	This allows the following type of function call:
@@ -81,6 +90,7 @@
 
 	@since 1.2.0 (wds-coding-standards)
 	@author Aubrey Portwood <aubrey@webdevstudios.com>
+
 	-->
 	<rule ref="PEAR.Functions.FunctionCallSignature">
 	  <properties>
@@ -91,10 +101,12 @@
 	</rule>
 
 	<!--
+
 	Supports the concatenated function calls above.
 
 	@since 1.2.0 (wds-coding-standards)
 	@author Aubrey Portwood <aubrey@webdevstudios.com>
+
 	-->
 	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket" />
 	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket" />
