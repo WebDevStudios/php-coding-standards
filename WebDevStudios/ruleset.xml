@@ -63,16 +63,16 @@
 	This allows the following type of function call:
 
 	    thing( 'par1', [
-		    'par2array1',
-		    'par2array2',
+	      'par2array1',
+	      'par2array2',
 	    ] );
 
 
 	...which WPCS usually makes you do:
 
 	    $array = [
-		    'par2array1',
-		    'par2array2',
+	      'par2array1',
+	      'par2array2',
 	    ];
 
 	    thing( 'par1', $array );
