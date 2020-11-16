@@ -9,4 +9,4 @@
  */
 
 $shorthand = []; // Should not warn or error, as it's encouraged.
-$longform  = array(); // Should also not warn or error, but will discourage in the future.
+$longform  = array(); // Should warn, will become error in the future.

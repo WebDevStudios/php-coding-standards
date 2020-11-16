@@ -12,6 +12,33 @@
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeKeyFound" />
+
+		<!--
+		Allow Shorthand Syntax
+
+		WordPress decided to go for array() over [], we like [], and we discourage
+		array() [see below).]
+
+		@since 1.2.2
+		@see https://github.com/WordPress/WordPress-Coding-Standards/blob/2.2.0/WordPress-Core/ruleset.xml#L109
+		@see Generic.Arrays.DisallowLongArraySyntax.Found (Where we discourage array() syntax)
+		-->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+	</rule>
+
+	<!--
+	Warn on longform array syntax.
+
+	E.g. array().
+
+	@see   https://github.com/WebDevStudios/php-coding-standards/issues/40
+	@since 1.2.2
+
+	May error in the future.
+	-->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found">
+		<type>warning</type>
+		<message>Short array syntax should be used to define arrays, in the future longform syntax will not be allowed.</message>
 	</rule>
 
 	<!-- Include WordPress-Docs -->
